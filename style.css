@@ -97,17 +97,17 @@ body{
 }
 
 #face{
-    list-style-image: url(/face.jpg);
+    list-style-image: url(face.jpg);
     margin-bottom: 10px;
 }
 
 #insta{
-    list-style-image: url(/insta.jpg);
+    list-style-image: url(insta.jpg);
     margin-bottom: 10px;
 }
 
 #git{
-    list-style-image: url(/git.jpg);
+    list-style-image: url(git.jpg);
     margin-bottom: 10px;
 }
 
