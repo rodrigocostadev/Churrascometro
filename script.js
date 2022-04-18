@@ -1,7 +1,8 @@
 // carne 400 gramas por pessoa, + de 6 horas = 650 gramas
 
-// cerveja 1500ml por homem, + de 6 horas 2500 ml
-// cerveja 700ml por mulher, + de 6 horas 1400 ml
+// cerveja 1500ml por homem, + de 5 horas 2500 ml
+// cerveja 700ml por mulher, + de 5 horas 1400 ml
+// criança não bebe cerveja
 
 // pao de alho 100 gramas por pessoa
 // linguicinha 100 gramas por pessoa
