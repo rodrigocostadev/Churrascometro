@@ -17,15 +17,13 @@ document.getElementById("calcular").addEventListener("click", function calcular 
     //homens
     let homens = document.getElementById("homens")
     let nhomens = homens.value
-    homens.value = ""
-    
+    homens.value = ""    
 
     //mulheres
     let mulheres = document.getElementById("mulheres")
     let nmulheres = mulheres.value    
     mulheres.value = ""
-    let floatmulheres = (nmulheres * 0.6)
-      
+    let floatmulheres = (nmulheres * 0.6)      
 
     //crianças
     let criancas = document.getElementById("criancas")
@@ -53,7 +51,7 @@ document.getElementById("calcular").addEventListener("click", function calcular 
         idcarne.appendChild(criacarne)        
 
         //cerveja
-        let cerveja = (nhomens*1.5)
+        let cerveja = (nhomens*1.5 + nmulheres*0.7)
         let latinhas = Math.ceil(cerveja / 0.350)     //latinhas arredondar pra mais
         let resultadocerveja = (cerveja+" Litros de cerveja ou "+latinhas+" latinhas")
         let idcerveja = document.getElementById("cerveja")
@@ -94,7 +92,6 @@ document.getElementById("calcular").addEventListener("click", function calcular 
         let criamaionese = document.createElement("p")
         criamaionese.textContent = maionese
         idmaionese.appendChild(criamaionese)
-
     }
 
     else if(nduracao >= 5){        
@@ -108,7 +105,7 @@ document.getElementById("calcular").addEventListener("click", function calcular 
         idcarne.appendChild(criacarne)    
 
         //cerveja
-        let cerveja = (nhomens*2.5)
+        let cerveja = (nhomens*2.5 + nmulheres*1.4)
         let resultadocerveja = (cerveja+" Litros de cerveja")
         let idcerveja = document.getElementById("cerveja")
         let criacerveja = document.createElement("p")
@@ -148,8 +145,6 @@ document.getElementById("calcular").addEventListener("click", function calcular 
         let criamaionese = document.createElement("p")
         criamaionese.textContent = maionese
         idmaionese.appendChild(criamaionese)
-
-
     }   
 
     else {
