@@ -44,7 +44,7 @@ document.getElementById("calcular").addEventListener("click", function calcular 
     // if(nduracao > 0 || nduracao <= 5){
         if(nduracao > 0 && nduracao <= 4 ){
         //carne
-        let carne = Math.round(pessoas* 0.4)
+        let carne = Math.ceil(pessoas* 0.4)
         let resultadocarne = (carne+" Kg de carne")
         let idcarne = document.getElementById("carne")     
         let criacarne =  document.createElement("p")      
@@ -98,7 +98,7 @@ document.getElementById("calcular").addEventListener("click", function calcular 
     else if(nduracao >= 5 ){        
 
         //carne
-        let carne = Math.round(pessoas* 0.65)
+        let carne = Math.ceil(pessoas* 0.65)
         let resultadocarne = (carne+" Kg de carne")
         let idcarne = document.getElementById("carne")     
         let criacarne =  document.createElement("p")      
