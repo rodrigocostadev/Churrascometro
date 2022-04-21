@@ -44,7 +44,7 @@ document.getElementById("calcular").addEventListener("click", function calcular 
     // if(nduracao > 0 || nduracao <= 5){
         if(nduracao > 0 && nduracao <= 4 ){
         //carne
-        let carne = (pessoas* 0.4)
+        let carne = Math.round(pessoas* 0.4)
         let resultadocarne = (carne+" Kg de carne")
         let idcarne = document.getElementById("carne")     
         let criacarne =  document.createElement("p")      
@@ -61,15 +61,15 @@ document.getElementById("calcular").addEventListener("click", function calcular 
         idcerveja.appendChild(criacerveja)
 
         //refri
-        let refri = (pessoas*0.4)
-        let resultadorefri = (refri+" Litros de refri")
+        let refri = Math.round(pessoas*0.4)
+        let resultadorefri = (refri+" Litros de refrigerante")
         let idrefri = document.getElementById("refri")
         let criarefri = document.createElement("p")
         criarefri.textContent = resultadorefri
         idrefri.appendChild(criarefri)
 
         //pao de alho
-        let paodealho = (pessoas*100)
+        let paodealho = Math.round(pessoas*100)
         let resultadopaodealho = (paodealho+" Gramas de pão de alho")
         let idpaodealho = document.getElementById("paodealho")
         let criapaodealho = document.createElement("p")
@@ -77,7 +77,7 @@ document.getElementById("calcular").addEventListener("click", function calcular 
         idpaodealho.appendChild(criapaodealho)
 
         //linguicinha
-        let linguicinha = (pessoas*100)
+        let linguicinha = Math.round(pessoas*100)
         let resultadolinguicinha = (linguicinha+" Gramas de Linguicinha")
         let idlinguicinha = document.getElementById("linguicinha")
         let crialinguicinha = document.createElement("p")
@@ -95,10 +95,10 @@ document.getElementById("calcular").addEventListener("click", function calcular 
         idmaionese.appendChild(criamaionese)
     }
 
-    else if(nduracao >= 5){        
+    else if(nduracao >= 5 ){        
 
         //carne
-        let carne = (pessoas* 0.65)
+        let carne = Math.round(pessoas* 0.65)
         let resultadocarne = (carne+" Kg de carne")
         let idcarne = document.getElementById("carne")     
         let criacarne =  document.createElement("p")      
@@ -106,7 +106,7 @@ document.getElementById("calcular").addEventListener("click", function calcular 
         idcarne.appendChild(criacarne)    
 
         //cerveja
-        let cerveja = (nhomens*2.5 + nmulheres*1.4)
+        let cerveja = Math.ceil(nhomens*2.5 + nmulheres*1.4)
         let resultadocerveja = (cerveja+" Litros de cerveja")
         let idcerveja = document.getElementById("cerveja")
         let criacerveja = document.createElement("p")
@@ -114,15 +114,15 @@ document.getElementById("calcular").addEventListener("click", function calcular 
         idcerveja.appendChild(criacerveja)
 
         //refri
-        let refri = (pessoas*0.8)
-        let resultadorefri = (refri+" Litros de refri")
+        let refri = Math.round(pessoas*0.8)
+        let resultadorefri = (refri+" Litros de refrigerante")
         let idrefri = document.getElementById("refri")
         let criarefri = document.createElement("p")
         criarefri.textContent = resultadorefri
         idrefri.appendChild(criarefri)
 
         //pao de alho
-        let paodealho = (pessoas*100)
+        let paodealho = Math.round(pessoas*100)
         let resultadopaodealho = (paodealho+" Gramas de pão de alho")
         let idpaodealho = document.getElementById("paodealho")
         let criapaodealho = document.createElement("p")
@@ -130,7 +130,7 @@ document.getElementById("calcular").addEventListener("click", function calcular 
         idpaodealho.appendChild(criapaodealho)                
 
         //linguicinha
-        let linguicinha = (pessoas*100)
+        let linguicinha = Math.round(pessoas*100)
         let resultadolinguicinha = (linguicinha+" Gramas de Linguicinha")
         let idlinguicinha = document.getElementById("linguicinha")
         let crialinguicinha = document.createElement("p")
@@ -151,7 +151,7 @@ document.getElementById("calcular").addEventListener("click", function calcular 
     else {
         let iderro = document.getElementById("erro")     
         let criaerro =  document.createElement("p")      
-        criaerro.textContent = ("ERRO - Digite a duração em horas")
+        criaerro.textContent = ("ERRO - Preencha todos os campos")
         iderro.appendChild(criaerro)       
     }    
 })
