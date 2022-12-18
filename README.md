@@ -5,4 +5,4 @@ No projeto é possivel calcular a quantidade de ingredientes para um churrasco d
 
 link do projeto:
 
-https://rodrigocostadev.github.io/projeto-churrascometro/
+https://rodrigocostadev.github.io/Churrascometro/
