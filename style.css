@@ -77,7 +77,8 @@ body{
 
 .resposta{
     text-align: center;
-    font-family: 'Prompt', sans-serif;
+    /* font-family: 'Prompt', sans-serif; */
+    font-family: 'Play', sans-serif;
     font-size: 20px;    
 }
 
