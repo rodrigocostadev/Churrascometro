@@ -130,9 +130,10 @@ body{
     margin-bottom: 10px;
 }
 
-/* #descricao{
-    font-family: 'Mukta', sans-serif;
-} */
+#descricao{
+    /* font-family: 'Mukta', sans-serif; */
+    font-family: 'Play', sans-serif;
+}
 
 a {
     text-decoration: none;
